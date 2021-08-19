@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Test Scores application</title>
+
+    <!-- css for the web page -->
+    <style>
+        body {
+            width: 75%;
+            margin: auto;
+            background-color: aqua;
+        }
+
+
+        #tasks {
+            margin-top: 0;
+            float: right;
+        }
+
+        span {
+            color: red;
+            font-size: small;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>The Test Scores application</h1>
+    </header>
+
+    <main>
+        <h1>My Test Scores</h1>
+        <div>
+            <label>All scores:</label>
+            <label id="all"></label>
+        </div>
+        <div>
+            <label>Average score:</label>
+            <label id="avg"></label>
+        </div>
+        <div>
+            <label>Last 3 scores:</label>
+            <label id="last"></label>
+        </div>
+        <div>
+            <label for="score">Enter new score:</label>
+            <input type="text" id="score">
+            <input type="button" id="add_score" value="Add Score">
+            <span></span>
+        </div>
+    </main>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script src="test_scores.js"></script>
+    <script src="lib_test_score.js"></script>
+</body>
+
+</html>
